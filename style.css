@@ -1,0 +1,14 @@
+.k-widget.k-listview {
+    width: 200px;
+    border: 1px solid blue;
+}
+
+.k-widget.k-listview > div {
+    border-bottom: 1px solid green;
+    cursor: pointer;
+}
+
+.k-widget.k-listview .k-state-selected {
+    color: white;
+    background-color: blue;
+}

@@ -1,14 +1,35 @@
 <h1>Knockout-Kendo ListView binding</h1>
 
+<link rel="stylesheet" href="style.css">
+
 <script src="./src/lib/jquery.js"></script>
-<script src="./src/lib/kendo.core.js"></script>
-<script src="./src/lib/kendo.data.js"></script>
-<script src="./src/lib/kendo.listview.js"></script>
+<script src="./src/lib/kendo.all.min.js"></script>
 <script src="./src/lib/knockout-3.4.2.js"></script>
 <script src="./src/lib/knockout-kendo.min.js"></script>
 
+<script src="./src/store.js"></script>
+<script src="./src/listview.binding.js"></script>
+<script src="./src/AppViewModel.js"></script>
+
+<div>
+    <div data-bind="listView: { data: Items, selected: Selected, selectable: 'multiple', template: { value: Template, useKo: true } }"></div>
+    <hr />
+    <div data-bind="foreach: Selected">
+        <div>
+            <span data-bind="text: name"></span>
+        </div>
+    </div>
+</div>
+
 <script>
     $(document).ready(function () {
-        alert('ready');
+        ko.applyBindings(new context.AppViewModel());
     });
+</script>
+
+<script id="listViewTemplate" type="text/html">
+    <div>
+        <span data-bind="text: id"></span>
+        <span data-bind="text: name"></span>
+    </div>
 </script>
