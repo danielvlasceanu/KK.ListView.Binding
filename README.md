@@ -3,9 +3,9 @@
 The KendoUI ListView control does not expose a more direct way to work with selected items. That's because <em><a href="https://www.telerik.com/forums/how-to-select-listview-item-by-it-s-id-in-the-model#jcypkeu-HEuQeYc_UuFrgw">the ListView selection relies only on DOM elements [...]</a></em>. As a result, the Knockout-Kendo binding also does not have this functionality. 
 
 # Features
-I needed my ListView controls to be able to do basic things: show items and select them. In a KnockoutJS <-> KendoUI <-> Knodkout-Kendo context, this translates to a custom binding. 
+I needed my ListView controls to be able to do basic things: show items and select them. In a KnockoutJS-KendoUI-KnockoutKendo context, this translates into a custom binding. 
 
-Right now is not so smart; it only supports:
+Right now is not so smart, it only supports
 * selected items
 * KO templates
 
