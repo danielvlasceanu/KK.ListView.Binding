@@ -16,4 +16,8 @@ Check the index.html to see it in action.
 This is a <strong>KnockoutJS</strong> binding that extends the <strong>Knockout-Kendo</strong> binding of a <strong>Kendo UI</strong> ListView control. 
 Check the <a href="https://github.com/kendo-labs/knockout-kendo#compatibility-and-requirements">Knockout-Kendo requirements section</a> for more information.
 
+# See it in action
+Just download the ZIP, extract it and open the index.html in your favorite brouser.
+
+<hr/>
 I hope it helps, at least by making an idea of what needs to be done in order to achieve the required result. 
