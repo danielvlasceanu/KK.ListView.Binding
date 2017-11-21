@@ -12,13 +12,54 @@
 <script src="./src/AppViewModel.js"></script>
 
 <div>
-    <div data-bind="listView: { data: Items, selected: Selected, selectable: 'multiple', template: { value: Template, useKo: true } }"></div>
-    <hr />
-    <div data-bind="foreach: Selected">
-        <div>
-            <span data-bind="text: name"></span>
-        </div>
+    <div>
+        <p>JavaScript library versions:</p>
+        <hr />
+        <table>
+            <thead>
+                <tr>
+                    <th>Library</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JQuery</td>
+                    <td>1.12.3</td>
+                </tr>
+                <tr>
+                    <td>KnockoutJS</td>
+                    <td>3.4.0</td>
+                </tr>
+                <tr>
+                    <td>Kendo UI</td>
+                    <td>2015.3.1111</td>
+                </tr>
+                <tr>
+                    <td>Knockout-Kendo</td>
+                    <td>0.9.7</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Check
+            <a href="https://github.com/kendo-labs/knockout-kendo#compatibility-and-requirements">here</a> the current Knockout-Kendo dependencies.</p>
     </div>
+    <hr />
+    <table>
+        <tr>
+            <td>
+                <div data-bind="listView: { data: Items, selected: Selected, selectable: 'multiple', template: { value: Template, useKo: true } }"></div>
+            </td>
+            <td>
+                <div class="result" data-bind="foreach: Selected">
+                    <div>
+                        <span data-bind="text: name"></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
 </div>
 
 <script>

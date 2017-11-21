@@ -10,5 +10,19 @@
 
 .k-widget.k-listview .k-state-selected {
     color: white;
-    background-color: blue;
+    background-color: brown
+}
+
+table th {
+    font-weight: bold;
+}
+
+table th, table td {
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid brown;
+}
+
+.result {
+    width: 200px;
 }
