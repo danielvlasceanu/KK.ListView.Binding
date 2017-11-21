@@ -1,4 +1,4 @@
-# Knockout-Kendo ListView bindind
+# Knockout-Kendo ListView binding
 
 The KendoUI ListView control does not expose a more direct way to work with selected items. That's because <em><a href="https://www.telerik.com/forums/how-to-select-listview-item-by-it-s-id-in-the-model#jcypkeu-HEuQeYc_UuFrgw">the ListView selection relies only on DOM elements [...]</a></em>. As a result, the Knockout-Kendo binding also does not have this functionality. 
 
