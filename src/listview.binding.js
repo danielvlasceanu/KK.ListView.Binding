@@ -22,7 +22,7 @@ ko.bindingHandlers.listView = {
             var wdg = widget || listViewWidget(),
                 data = wdg.dataSource.view(),
                 selected = $.map(wdg.select(), function (item) {
-                    return data[$(item).index()];
+                    return data[$(item).index()]._raw();
                 });
 
             return selected;
